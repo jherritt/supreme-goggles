@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def my_func(matrix_1, matrix_2):
     try:
@@ -7,9 +8,9 @@ def my_func(matrix_1, matrix_2):
         print("Matrices are not aligned")
         return None
 
-my_matrix = np.identity(4)
-my_second_matrix = np.identity(4)
-
+my_matrix = np.identity(5)
+my_second_matrix = np.random.random(size =(4,4))
 print(my_func(my_matrix, my_second_matrix))
+
 
 #this code is practice on uploading changes to github
